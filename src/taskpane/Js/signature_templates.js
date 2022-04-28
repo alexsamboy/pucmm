@@ -13,7 +13,7 @@ function get_template_A_str(user_info)
   str += user_info.name;
   str += `</strong></font><br>`;
   str += is_valid_data(user_info.job) ? user_info.job : "";
-  str += `<br><font size="+1" color="#17365d"><strong>`
+  str += `<br><font size="+1" color="#17365d"><strong>`;
   str += `Dirección de Comunicaciones`;
   str += `</strong></font><br>`;
   str += is_valid_data(user_info.phone) ? user_info.phone + ", ext. " : "";
