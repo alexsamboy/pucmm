@@ -43,8 +43,19 @@ function prepopulate_from_userprofile()
   _phone_number.val(Office.context.MailboxEnums.EntityType.PhoneNumber);
  
 }
-console.log(Office.context.mailbox.userProfile);
-console.log(user_info);
+var item = Office.context.mailbox.item;
+// Get an array of strings that represent contacts in the current item's body.
+var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+console.log("There are " + contacts.length + " contacts.")
+contacts.forEach(function (contact) {
+    console.log("Person name: " + JSON.stringify(contact.personName));
+    console.log("Business name: " + JSON.stringify(contact.businessName));
+    console.log("Addresses: " + JSON.stringify(contact.addresses));
+    console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+    console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+    console.log("Urls: " + JSON.stringify(contact.urls));
+});
+
 function load_saved_user_info()
 {
   let user_info_str = localStorage.getItem('user_info');
