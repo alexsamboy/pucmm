@@ -43,7 +43,8 @@ function prepopulate_from_userprofile()
   _phone_number.val(Office.context.MailboxEnums.EntityType.PhoneNumber);
  
 }
-
+console.log(Office.context.mailbox.userProfile);
+console.log(user_info);
 function load_saved_user_info()
 {
   let user_info_str = localStorage.getItem('user_info');
