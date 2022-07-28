@@ -7,7 +7,17 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://graph.microsoft.com/v1.0/users/cbueno@pucmm.edu.do?$select=displayName,jobTitle,officeLocation,businessPhones,mail", requestOptions)
+let urlApi="";
+urlApi+=`https://graph.microsoft.com/v1.0/users/`;
+  urlApi+= `manuelperez@pucmm.edu.do`;
+  urlApi+=`?$select=displayName,jobTitle,officeLocation,businessPhones,mail`;
+
+
+fetch(urlApi, requestOptions)
   .then(response => response.json())
-  .then(result => console.log(result))
+  .then(result => mifuncion(result))
   .catch(error => console.log('error', error));
+
+  function mifuncion(result){
+    console.log(result.displayName)
+  }

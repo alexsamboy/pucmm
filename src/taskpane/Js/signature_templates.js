@@ -11,10 +11,10 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-if (is_valid_data(user_info.greeting))
+/*if (is_valid_data(user_info.greeting))
   {
     let urlApi = "";
-  }
+  }*/
 
   urlApi+=`https://graph.microsoft.com/v1.0/users/`;
   urlApi+= user_info.email;
@@ -32,7 +32,6 @@ function get_template_A_str(result)
 {
   let str = "";
  
-
   str += `<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td><font size="+1" color="#17365d"><strong>`;
   str += result.displayName;
   str += `</strong></font><br>`;
