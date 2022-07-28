@@ -31,10 +31,7 @@ fetch(urlApi, requestOptions)
 function get_template_A_str(result)
 {
   let str = "";
- /* if (is_valid_data(user_info.greeting))
-  {
-    str += user_info.greeting + "<br/>";
-  }*/
+ 
 
   str += `<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td><font size="+1" color="#17365d"><strong>`;
   str += result.displayName;
