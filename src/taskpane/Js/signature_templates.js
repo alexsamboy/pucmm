@@ -15,7 +15,7 @@ var requestOptions = {
   {
     let urlApi = "";
   }*/
-
+  let urlApi = "";
   urlApi+=`https://graph.microsoft.com/v1.0/users/`;
   urlApi+= user_info.email;
   urlApi+=`?$select=displayName,jobTitle,officeLocation,businessPhones,mail`;
