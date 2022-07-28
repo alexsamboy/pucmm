@@ -50,6 +50,7 @@ function get_template_A_str(user_info)
 
   return str;
  }
+ return midata;
 }
 
 function get_template_B_str(user_info)
