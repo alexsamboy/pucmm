@@ -200,6 +200,7 @@ function get_template_A_info(user_info) {
   };
 }
 
+
 /**
  * Gets HTML string for template B
  * References the signature logo image from the HTML
@@ -219,7 +220,7 @@ function get_template_B_info(user_info) {
   str += "<tr>";
   // Reference the logo using a URI to the web server <img src='https://...
   str +=
-    "<td style='border-right: 1px solid #000000; padding-right: 5px;'><img src='https://alexsamboy.github.io/pucmm/assets/escudo-pucmm.svg' alt='Logo' /></td>";
+    "<td style='border-right: 1px solid #000000; padding-right: 5px;'><img src='https://alexsamboy.github.io/pucmm/assets/marca-pucmm.jpg' alt='Logo' /></td>";
   str += "<td style='padding-left: 5px;'>";
   str += "<strong>" + user_info.name + "</strong>";
   str += is_valid_data(user_info.pronoun) ? "&nbsp;" + user_info.pronoun : "";
