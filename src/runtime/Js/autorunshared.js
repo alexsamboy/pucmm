@@ -175,11 +175,9 @@ function get_template_A_info(user_info) {
 
   str += "<table>";
   str += "<tr>";
-  // Embed the logo using <img src='cid:...
+  // Embed the logo using <img src='cid:... <img src='cid:" + logoFileName + "' alt='MS Logo' width='24' height='24' />
   str +=
-    "<td style='border-right: 1px solid #000000; padding-right: 5px;'><img src='cid:" +
-    logoFileName +
-    "' alt='MS Logo' width='24' height='24' /></td>";
+    "<td style='border-right: 1px solid #000000; padding-right: 5px;'><img src='https://alexsamboy.github.io/pucmm/assets/marca-pucmm.jpg' alt='MS Logo' width='24' height='24' /></td>";
   str += "<td style='padding-left: 5px;'>";
   str += "<strong> firma por defecto" + user_info.name + "</strong>";
   str += is_valid_data(user_info.pronoun) ? "&nbsp;" + user_info.pronoun : "";
