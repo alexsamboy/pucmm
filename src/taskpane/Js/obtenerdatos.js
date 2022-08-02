@@ -20,7 +20,8 @@ fetch(urlApi, requestOptions)
 
   function mifuncion(result){
     var nombre = result.displayName;
+    console.log(nombre);
 
     return nombre;
-    /*console.log(result)*/
+    
   }
