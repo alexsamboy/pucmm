@@ -19,13 +19,7 @@ fetch(urlApi, requestOptions)
   .catch(error => console.log('error', error));
 
   function mifuncion(result){
-
-
-    var nombre = document.getElementById('phone_number');
-    nombre.value = result.displayName;
-
-    console.log(nombre);
-
+    console.log(result);
     
     
   }
