@@ -177,7 +177,7 @@ function get_template_A_info(user_info) {
   str +='<strong>'+ user_info.name +'</strong>';
   str +='<br><font size="2" face="Arial">'+ user_info.job +'</font><br>';
   str +='<strong>';
-  str += is_valid_data(user_info.pronoun) ? "&nbsp;" + user_info.pronoun : "";
+  str += is_valid_data(user_info.pronoun) ? "" + user_info.pronoun : "";
   str += '</strong>';
   str += '<br>Tel.:';
   str += is_valid_data(user_info.phone) ? user_info.phone + "<br/>" : "";
