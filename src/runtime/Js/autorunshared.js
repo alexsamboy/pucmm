@@ -175,7 +175,7 @@ function get_template_A_info(user_info) {
 
   str +='<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
   str +='<strong>'+ user_info.name +'</strong>';
-  str +='<br><font size="2" face="Arial">'+ is_valid_data(user_info.job) ? user_info.job : '</font><br>';
+  str +='<br><font size="2" face="Arial">'+ user_info.job +'</font><br>';
   str +='<strong>'+ user_info.pronoun + '</strong>';
   str +='<br>Tel.:'+ user_info.phone +'<br>' ;
   str +='<a mailto="'+ user_info.email +'">' + user_info.email +'</a>';
