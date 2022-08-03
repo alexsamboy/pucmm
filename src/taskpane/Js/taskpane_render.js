@@ -148,7 +148,7 @@ function create_user_info()
 
     if (user_info.pronoun !== "")
     {
-      user_info.pronoun = "(" + user_info.pronoun + ")";
+      user_info.pronoun = "" + user_info.pronoun + "";
     }
 
     console.log(user_info);
