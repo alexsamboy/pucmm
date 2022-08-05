@@ -10,29 +10,6 @@
  * @param {*} eventObj Office event object
  * @returns
  */
-/**
-   * Mi función para datos
-   */
- var myHeaders = new Headers();
- myHeaders.append("Content-Type", "application/json");
- 
- var raw = JSON.stringify({
-   "correo": "manuelperez@pucmm.edu.do"
- });
- 
- var dataUser;
- 
- var requestOptions = {
-   method: 'POST',
-   headers: myHeaders,
-   body: raw,
-   redirect: 'follow'
- };
- 
- fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be693e44ee31bf2/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BNBlKqFf8vaViNf7nlHudzobTdzxa4n0DcgXr8oXe_c", requestOptions)
-   .then(response => response.json())
-   .then(useresult => dataUser = useresult)
-   .catch(error => console.log('error', error));
 
 
 function checkSignature(eventObj) {
@@ -191,16 +168,15 @@ function get_command_id() {
     "logoBase64": The base64 encoded logo image,
     "logoFileName": The filename of the logo image
  */
-function get_template_A_info(user_info, dataUser) {
+function get_template_A_info(user_info) {
   const logoFileName = "marca-pucmm.jpg";
-  let uData = dataUser;
   let str = "";
   if (is_valid_data(user_info.greeting)) {
     str += user_info.greeting + "<br/>";
   }
 
   str +='<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
-  str +='<strong>'+ user_info.name + ' -> ' + uData +'</strong></font>';
+  str +='<strong>'+ user_info.name +'</strong></font>';
   str +='<br><font size="2" face="Arial">'+ user_info.job +'</font><br>';
   str +='<font size="3" color="#17365d" face="Arial">';
   str += is_valid_data(user_info.pronoun) ? "<strong>" + user_info.pronoun : "";
