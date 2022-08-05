@@ -10,6 +10,32 @@
  * @param {*} eventObj Office event object
  * @returns
  */
+/**
+   * Mi función para datos
+   */
+ var myHeaders = new Headers();
+ myHeaders.append("Content-Type", "application/json");
+ 
+ var raw = JSON.stringify({
+   "correo": "cbueno@pucmm.edu.do"
+ });
+ 
+ let dataUser;
+ 
+ var requestOptions = {
+   method: 'POST',
+   headers: myHeaders,
+   body: raw,
+   redirect: 'follow'
+ };
+ 
+ fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be693e44ee31bf2/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BNBlKqFf8vaViNf7nlHudzobTdzxa4n0DcgXr8oXe_c", requestOptions)
+   .then(response => response.json())
+   .then(result => dataUser = result)
+   .catch(error => console.log('error', error));
+
+   console.log(dataUser);
+   
 function checkSignature(eventObj) {
   let user_info_str = Office.context.roamingSettings.get("user_info");
   if (!user_info_str) {
@@ -173,29 +199,6 @@ function get_template_A_info(user_info) {
     str += user_info.greeting + "<br/>";
   }
 
-  /**
-   * Mi función para datos
-   */
-   var myHeaders = new Headers();
-   myHeaders.append("Content-Type", "application/json");
-   
-   var raw = JSON.stringify({
-     "correo": "cbueno@pucmm.edu.do"
-   });
-   
-   let dataUser;
-   
-   var requestOptions = {
-     method: 'POST',
-     headers: myHeaders,
-     body: raw,
-     redirect: 'follow'
-   };
-   
-   fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be693e44ee31bf2/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BNBlKqFf8vaViNf7nlHudzobTdzxa4n0DcgXr8oXe_c", requestOptions)
-     .then(response => response.json())
-     .then(result => dataUser = result)
-     .catch(error => console.log('error', error));
 
   str +='<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
   str +='<strong>'+ user_info.name +'</strong></font>';
