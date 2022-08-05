@@ -1,27 +1,22 @@
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJub25jZSI6InVUY1Fna1ZWTGhUZnJXWnRSM2szN0UzTEFyMk5IUU9JdDVMVWtfajhEV0UiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83M2M5YTQxOS04NjNkLTQyMjYtYTgzZi03YTIwMGFkNjliZTkvIiwiaWF0IjoxNjU5NDY2Njc4LCJuYmYiOjE2NTk0NjY2NzgsImV4cCI6MTY1OTQ3MjM3NiwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkUyWmdZRmkya2VHSXpjWFZqclV0K1hGdU9qdWlMTGozYUlkdFpubk51dFlpd05Rb2VRc0EiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6Ik8zNjV3cFVzZXIiLCJhcHBpZCI6Ijg2NGZhODY0LTdiOGYtNGFlMC05NWE5LTM5YTU4N2ZkZjYwYyIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiUMOpcmV6IFNhbWJveSIsImdpdmVuX25hbWUiOiJNYW51ZWwgQWxleGFuZGVyIiwiaWR0eXAiOiJ1c2VyIiwiaXBhZGRyIjoiMTkwLjExMy43Ny41NSIsIm5hbWUiOiJNYW51ZWwgQWxleGFuZGVyIFDDqXJleiBTYW1ib3kiLCJvaWQiOiI2MThkNjg4OS1lNTZlLTQwNDktODBjZS01ZWZhZGE2NWJkNjAiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtNDE0MDAyNzMyNy0yOTgwMzkyMTQ4LTExMDQwNzk4MDgtMjU2NyIsInBsYXRmIjoiMyIsInB1aWQiOiIxMDAzN0ZGRTg5RjUzMEZBIiwicmgiOiIwLkFRNEFHYVRKY3oyR0prS29QM29nQ3RhYjZRTUFBQUFBQUFBQXdBQUFBQUFBQUFBT0FQOC4iLCJzY3AiOiJlbWFpbCBvcGVuaWQgcHJvZmlsZSBVc2VyLlJlYWQgVXNlci5SZWFkLkFsbCIsInNpZ25pbl9zdGF0ZSI6WyJrbXNpIl0sInN1YiI6ImVrOV9qeFNWQi1HVjBoZUhLQjdMbWROZk9GMVF2QzJFWUQ0M1NKM0dLLVkiLCJ0ZW5hbnRfcmVnaW9uX3Njb3BlIjoiTkEiLCJ0aWQiOiI3M2M5YTQxOS04NjNkLTQyMjYtYTgzZi03YTIwMGFkNjliZTkiLCJ1bmlxdWVfbmFtZSI6Im1hbnVlbHBlcmV6QHB1Y21tLmVkdS5kbyIsInVwbiI6Im1hbnVlbHBlcmV6QHB1Y21tLmVkdS5kbyIsInV0aSI6Im9oakVDSUhtdkVLTFpMUC1Sdjl3QUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjc1OTM0MDMxLTZjN2UtNDE1YS05OWQ3LTQ4ZGJkNDllODc1ZSIsImNmMWMzOGU1LTM2MjEtNDAwNC1hN2NiLTg3OTYyNGRjZWQ3YyIsIjExNjQ4NTk3LTkyNmMtNGNmMy05YzM2LWJjZWJiMGJhOGRjYyIsIjRhNWQ4ZjY1LTQxZGEtNGRlNC04OTY4LWUwMzViNjUzMzljZiIsImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfc3QiOnsic3ViIjoibFZuWW5JNnNjU3otTURnNWJjQnEyejlaWWxKZXpWeTNSYlZZdkpVVVZBMCJ9LCJ4bXNfdGNkdCI6MTM5ODI5ODA1NX0.Z4dHB8PALOuakms33EJPv4AM705qfByNF2B79DFToi6_SpF1WEjgeCac7slxbkaSVczRdpZdxeezrbXJosF-nY2jr-QUyO4n3BEfKkYa5BoWzl2G4FnCUCYaNqbyRWo1ML_qZ1uS0d2VfZjHrWI6AETC1GbFBshMcBgL2leUhDURLmugBGI191376AxcGwMAPDNkRvMx889Lsp8lrPvmhmaVD9v-lvilvYbvaHNE-dNZTvvxT6X0_KAHmcWaS23EbsMwFD325NgCeZ3KsXVNNliLKrqbXv4elDj2J06OYdHb5n9oXM1Cd_3gOKUHv_TbjISmt2Odk0Yd8lUNp-De2w");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "correo": "cbueno@pucmm.edu.do"
+});
+
+let dataUser;
 
 var requestOptions = {
-  method: 'GET',
+  method: 'POST',
   headers: myHeaders,
+  body: raw,
   redirect: 'follow'
 };
 
-let urlApi="";
-urlApi+=`https://graph.microsoft.com/v1.0/users/`;
-  urlApi+= `manuelperez@pucmm.edu.do`;
-  urlApi+=`?$select=displayName,jobTitle,officeLocation,businessPhones,mail`;
-
-
-fetch(urlApi, requestOptions)
+fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be693e44ee31bf2/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BNBlKqFf8vaViNf7nlHudzobTdzxa4n0DcgXr8oXe_c", requestOptions)
   .then(response => response.json())
-  .then(result => mifuncion(result))
+  .then(result => dataUser = result)
   .catch(error => console.log('error', error));
-
-  function mifuncion(result){
-    console.log(result);
-    
-    
-  }
 
   
