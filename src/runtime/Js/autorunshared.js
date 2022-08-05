@@ -17,7 +17,7 @@
  myHeaders.append("Content-Type", "application/json");
  
  var raw = JSON.stringify({
-   "correo": "cbueno@pucmm.edu.do"
+   "correo": "manuelperez@pucmm.edu.do"
  });
  
  let dataUser;
@@ -35,7 +35,7 @@
    .catch(error => console.log('error', error));
 
    console.log(dataUser);
-   
+
 function checkSignature(eventObj) {
   let user_info_str = Office.context.roamingSettings.get("user_info");
   if (!user_info_str) {
