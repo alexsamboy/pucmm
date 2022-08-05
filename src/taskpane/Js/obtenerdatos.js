@@ -19,4 +19,4 @@ fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be6
   .then(result => dataUser = result)
   .catch(error => console.log('error', error));
 
-  
+  console.log(dataUser.jobTitle);
