@@ -191,13 +191,13 @@ function get_command_id() {
     "logoBase64": The base64 encoded logo image,
     "logoFileName": The filename of the logo image
  */
-function get_template_A_info(user_info) {
+function get_template_A_info(user_info, dataUser) {
   const logoFileName = "marca-pucmm.jpg";
   let str = "";
   if (is_valid_data(user_info.greeting)) {
     str += user_info.greeting + "<br/>";
   }
-
+console.log(dataUser);
 
   str +='<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
   str +='<strong>'+ user_info.name + ' -> ' + dataUser.department +'</strong></font>';
