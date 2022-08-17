@@ -55,9 +55,9 @@
   .catch(error => console.log('error', error));
 
   function dataUser(datos){
-    cargo.value = datos.Nombre;
-    ext.value = datos.Campus;
-    unidad.value = datos.url;
+    cargo.value = datos[0].Nombre;
+    ext.value = datos[0].Campus;
+    unidad.value = datos[0].url;
   
 }
 
