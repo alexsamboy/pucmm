@@ -181,7 +181,7 @@ function get_command_id() {
 }*/
 
 function get_template_A_info(result) {
-  let nombre = result.Nombre;
+  let nombre = result[0].Nombre;
   /*const logoFileName = "marca-pucmm.jpg";
   let str = "";
   if (is_valid_data(user_info.greeting)) {
