@@ -42,11 +42,9 @@
 <script type="text/javascript">
 
   var d_name = document.querySelector('#display_name');
-  var unidad = document.querySelector('#preferred_pronoun');
+  var unidad = document.querySelector('#preferred_pronoun').value=d_name;
 
-  unidad.value = d_name;
+  console.log('Este lo he creado '+ unidad);
 
-
-  console.log('Este lo he creado' +' '+ d_name);
 </script>
 </html>
