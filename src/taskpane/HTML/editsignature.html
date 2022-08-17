@@ -41,14 +41,13 @@
 </body>
 <script type="text/javascript">
 
-  var d_name = document.querySelector('#display_name');
   var correo = document.querySelector('#email_id');
   var cargo = document.querySelector('#job_title');
   var ext = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
 
   var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
   "correo": correo
