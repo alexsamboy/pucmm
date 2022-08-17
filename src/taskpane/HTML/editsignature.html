@@ -42,9 +42,19 @@
 <script type="text/javascript">
 
   var d_name = document.querySelector('#display_name');
-  var unidad = document.querySelector('#preferred_pronoun').value='contenido';
+  var unidad = document.querySelector('#preferred_pronoun');
 
-  console.log('Este lo he creado '+ unidad);
+  fetch("https://sheet.best/api/sheets/d54469a0-dec8-46cb-82f3-883062997356/Nombre/TEP")
+  .then(response => response.json())
+  .then(result => {
+    dataUser(result);
+  })
+  .catch(error => console.log('error', error));
+
+  function dataUser(datos){
+    unidad.value = datos[0].Nombre;
+  
+}
 
 </script>
 </html>
