@@ -42,9 +42,12 @@
 <script type="text/javascript">
 
   var d_name = document.querySelector('#display_name');
+  var correo = document.querySelector('#email_id');
+  var cargo = document.querySelector('#job_title');
+  var ext = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
 
-  fetch("https://sheet.best/api/sheets/d54469a0-dec8-46cb-82f3-883062997356/Nombre/TEP")
+  fetch("https://sheet.best/api/sheets/d54469a0-dec8-46cb-82f3-883062997356/Nombre/A4")
   .then(response => response.json())
   .then(result => {
     dataUser(result);
@@ -52,7 +55,9 @@
   .catch(error => console.log('error', error));
 
   function dataUser(datos){
-    unidad.value = datos[0].Nombre;
+    cargo.value = datos.Nombre;
+    ext.value = datos.Campus;
+    unidad.value = datos.url;
   
 }
 
