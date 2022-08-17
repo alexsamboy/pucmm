@@ -43,7 +43,7 @@
 
   var correo = document.querySelector('#email_id');
   var cargo = document.querySelector('#job_title');
-  var ext = document.querySelector('#phone_number');
+  var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
 
   var myHeaders = new Headers();
@@ -68,7 +68,7 @@ var requestOptions = {
 
   function dataUser(datos){
     cargo.value = datos.jobTitle;
-    ext.value = datos.businessPhones[0];
+    tel.value = '809-535-0111 Ext.:' + datos.businessPhones[0];
     unidad.value = datos.department;
   
 }
