@@ -45,13 +45,13 @@
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
-  var gre = document.querySelector('#greeting_text').value = correo;
+  /*var gre = document.querySelector('#greeting_text').value = correo;*/
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "correo": "manuelperez@pucmm.edu.do"
+  "correo": correo.value
 });
 
 
