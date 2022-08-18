@@ -22,21 +22,22 @@
 
     <p class="templates">TEMPLATE A</p>
     <div id="box_1"></div>
-    <button class="testBtn" onclick="test_template_A()">Test</button>
+    <button class="testBtn" onclick="test_template_A()" style="display:none;">Test</button>
 
     <p class="templates">TEMPLATE B</p>
     <div id="box_2"></div>
-    <button class="testBtn" onclick="test_template_B()">Test</button>
+    <button class="testBtn" onclick="test_template_B()" style="display:none;">Test</button>
 
     <p class="templates">TEMPLATE C</p>
     <div id="box_3"></div>
-    <button class="testBtn" onclick="test_template_C()">Test</button>
+    <button class="testBtn" onclick="test_template_C()" style="display:none;">Test</button>
 
     <div style="height:35px;"><br/></div>
 
     <div style="display: none;" class="dropdown">
       <label for="templates">Nuevo correo
-        <select style="margin-left:62px;" id="new_mail">
+        <p>Comfirma que los datos estan correctos, en caso de tener una corrección pendiente comunicarse con RRHH</p>
+        <select style="margin-left:62px; display:none;" id="new_mail">
           <option value="none">None</option>
           <option selected value="templateA">Template A</option>
           <option value="templateB">Template B</option>
