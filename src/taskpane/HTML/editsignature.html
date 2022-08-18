@@ -11,7 +11,7 @@
   <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/utilities.js"></script>
-  <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js"></script> 
+  <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js">console.log(user_info);</script> 
 </head>
  
 <body>  
@@ -47,7 +47,7 @@ window.addEventListener("load", function(event) {
   var unidad = document.querySelector('#preferred_pronoun');
   var gre = document.querySelector('#greeting_text').value = correo;
 
-  console.log(user_info);
+  
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
