@@ -13,9 +13,10 @@
   <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/utilities.js"></script>
   <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js"></script> 
    <script>
+    var correoito;
     function esto() {
-      var co = document.querySelector('#email_id').value;
-      return co;
+      var correoito = document.querySelector('#email_id').value;
+      //return co;
 }
    </script>
 </head>
@@ -50,7 +51,7 @@
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
-  var gre = document.querySelector('#greeting_text').value = esto().co;
+  var gre = document.querySelector('#greeting_text').value = correoito;
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
