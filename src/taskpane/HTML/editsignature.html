@@ -20,7 +20,7 @@
 
     <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required />
 
-    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" onload="mifuncion()" required />
+    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" required />
 
     <input type="text" id="job_title" placeholder="Puesto" />
 
@@ -41,14 +41,13 @@
 <script type="text/javascript">
   
 window.addEventListener("load", function(event) { 
-let eee = document.getElementById('#email_id').value;
+//let eee = document.getElementById('#email_id').value;
   var correo = document.querySelector('#email_id').value;
   var gre = document.querySelector('#greeting_text').value = correo;  
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
   
-  function mifuncion(){console.log('mi suncion ->'+ document.querySelector('#email_id').value)}
   
 
 var myHeaders = new Headers();
