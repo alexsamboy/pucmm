@@ -20,8 +20,8 @@
 <body>  
   <div class="container-taskp">
 
-    <p class="templates">TEMPLATE A</p>
-    <div id="box_1"></div>
+    <p class="templates" style="display:none;">TEMPLATE A</p>
+    <div id="box_1" style="display:none;"></div>
     <button class="testBtn" onclick="test_template_A()" style="display:none;">Test</button>
 
     <p class="templates">TEMPLATE B</p>
@@ -50,7 +50,7 @@
 
     <div style="display: none;" class="dropdown">
       <label for="templates">Reply
-          <select style="margin-left:85px;" id="reply">
+          <select style="margin-left:85px; display:none;" id="reply">
             <option value="none">None</option>
             <option value="templateA">Template A</option>
             <option value="templateB">Template B</option>
@@ -63,7 +63,7 @@
 
     <div style="display: none;" class="dropdown">
       <label for="templates">Forward
-        <select style="margin-left:71px;" id="forward">
+        <select style="margin-left:71px; display:none;" id="forward">
           <option value="none">None</option>
           <option value="templateA">Template A</option>
           <option value="templateB">Template B</option>
