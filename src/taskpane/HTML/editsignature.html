@@ -11,7 +11,17 @@
   <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/utilities.js"></script>
-  <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js"></script> 
+  <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js"></script>
+  <script>
+  var correo;
+    
+  function fmail(){
+    correo = document.querySelector('input#email_id').value;
+    console.log(correo);
+    var gre = document.querySelector('#greeting_text').value = correo;
+  }
+
+  </script>
 </head>
  
 <body onload="fmail()">  
@@ -39,18 +49,14 @@
 
 </body>
 <script type="text/javascript">
-  var correo;
-  function fmail(correo){
-    correo = document.querySelector('input#email_id').value;
-    console.log(correo);
-  }
+  
 window.addEventListener("load", function(event) { 
 
     
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
-  var gre = document.querySelector('#greeting_text').value = correo;
+  
 
   
 
