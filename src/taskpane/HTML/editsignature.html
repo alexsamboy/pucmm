@@ -21,7 +21,7 @@
 
     <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required />
 
-    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" required />
+    <input type="email" id="email_id" placeholder="Email address*"  required />
 
     <input type="text" id="job_title" placeholder="Puesto" />
 
@@ -45,7 +45,7 @@
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
-  var gre = document.querySelector('#greeting_text').value = _email_id;
+  var gre = document.querySelector('#greeting_text').value = correo;
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
