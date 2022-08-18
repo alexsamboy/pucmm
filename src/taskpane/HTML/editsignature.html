@@ -14,12 +14,13 @@
   <script type="text/javascript" src="https://alexsamboy.github.io/pucmm/src/taskpane/Js/taskpane_render.js"></script> 
    <script>
     function esto() {
-  alert("This message was triggered from the onload event");
+      var co = document.querySelector('#email_id').value;
+      console.log(co);
 }
    </script>
 </head>
  
-<body onload="esto()">  
+<body onload="this.esto()">  
   <div class="container">
     <h2>Verificar firma</h2>
 
