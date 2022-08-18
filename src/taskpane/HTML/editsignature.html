@@ -15,13 +15,13 @@
    
 </head>
  
-<body>  
+<body onload="esto()">  
   <div class="container">
     <h2>Verificar firma</h2>
 
     <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required />
 
-    <input type="email" id="email_id" placeholder="Email address*"  required />
+    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" required />
 
     <input type="text" id="job_title" placeholder="Puesto" />
 
@@ -40,6 +40,10 @@
 
 </body>
 <script type="text/javascript">
+
+function esto() {
+  alert("This message was triggered from the onload event");
+}
 
   var correo = document.querySelector('#email_id').value;
   var cargo = document.querySelector('#job_title');
