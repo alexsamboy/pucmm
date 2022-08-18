@@ -15,7 +15,8 @@
    <script>
     
     function getCampos() {
-      var correo = document.querySelector('#email_id').value;  
+      var correo = $("input#email_id").value;
+        
       dataApi(correo);
 }
 
