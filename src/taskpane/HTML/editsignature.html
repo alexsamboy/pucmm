@@ -15,17 +15,17 @@
    <script>
     
     function getCampos() {
-      var correo = $("input#email_id").value;
-        
+      var correo = document.querySelector('#email_id').value;
+      
       dataApi(correo);
 }
 
-function dataApi(correo){
+function dataApi(_mail){
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
   var raw = JSON.stringify({
-    "correo": correo
+    "correo": `${_mail}`
   });
 
 
