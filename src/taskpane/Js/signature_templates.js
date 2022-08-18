@@ -9,7 +9,7 @@ function get_template_A_str(user_info)
     str += user_info.greeting + "<br/>";
   }
 
-  str +='<table border="0" cellpadding="5" cellspacing="5"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
+  str +='<table border="0" cellpadding="5" cellspacing="5" style="display:none;"><tbody><tr><td valign="top"><font size="3" color="#17365d" face="Arial">';
   str +='<strong>'+ user_info.name +'</strong>';
   str +='<br><font size="2" face="Arial">'+ user_info.job +'</font><br>';
   str += is_valid_data(user_info.pronoun) ? "<strong>" + user_info.pronoun : "";
@@ -31,7 +31,7 @@ function get_template_B_str(user_info)
     str += user_info.greeting + "<br/>";
   }
 
-  str += "<table>";
+  str += "<table style='display:none;'>";
   str +=   "<tr>";
   str +=     "<td style='border-right: 1px solid #000000; padding-right: 5px;'><img src='https://alexsamboy.github.io/pucmm/assets/marca-pucmm.jpg' alt='Logo' /></td>";
   str +=     "<td style='padding-left: 5px;'>";
