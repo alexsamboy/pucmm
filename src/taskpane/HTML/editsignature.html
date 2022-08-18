@@ -15,7 +15,7 @@
    <script>
     function esto() {
       var co = document.querySelector('#email_id').value;
-      console.log(co);
+      return co;
 }
    </script>
 </head>
@@ -50,7 +50,7 @@
   var cargo = document.querySelector('#job_title');
   var tel = document.querySelector('#phone_number');
   var unidad = document.querySelector('#preferred_pronoun');
-  var gre = document.querySelector('#greeting_text').value = correo;
+  var gre = document.querySelector('#greeting_text').value = esto;
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
