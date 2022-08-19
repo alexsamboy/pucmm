@@ -21,15 +21,15 @@
       2. Haga clic en el botón guardar para salvar la información.
     </p>
 
-    <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required readonly/>
+    <input type="text" id="display_name" placeholder="Name*" readonly onclick="this.select()" required />
 
-    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" required readonly/>
+    <input type="email" id="email_id" placeholder="Email address*" readonly onclick="this.select()" required />
 
     <input type="text" id="job_title" placeholder="Puesto" readonly />
 
     <input type="text" id="phone_number" placeholder="Phone number" readonly />
 
-    <input type="text" placeholder="Eg: Thank you," id="greeting_text" style="display:none;" readonly/>
+    <input type="text" placeholder="Eg: Thank you," id="greeting_text" readonly style="display:none;"/>
 
     <input type="text" placeholder="Dependencia" id="preferred_pronoun" readonly />
 
@@ -46,7 +46,8 @@
   var correo = document.querySelector('#email_id');
   var nombre = document.querySelector('#display_name');  
   var cargo = document.querySelector('#job_title');
-  var tel = document.querySelector('#phone_number');dad = doument.querySelector('#preferred_pronoun');
+  var tel = document.querySelector('#phone_number');
+  var unidad = document.querySelector('#preferred_pronoun');
 
   function cargar_datos() {
 
@@ -74,13 +75,10 @@
   }
 
   function dataUser(datos) {
-      console.table(datos);
       nombre.value = datos.displayName;
       cargo.value = datos.jobTitle;
       tel.value = '1 (809) 580-1962 Ext.: ' + datos.businessPhones[0];
       unidad.value = datos.department;
-
-      //console.log(cargo.value)
     }
   
 </script>
