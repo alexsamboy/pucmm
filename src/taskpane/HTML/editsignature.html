@@ -17,6 +17,9 @@
 <body>  
   <div class="container">
     <h2>Verificar firma</h2>
+    <p>1. Haga clic en el botón cargar datos para visualizar su información completa.<br/>
+      2. Haga clic en el botón guardar para salvar la información.
+    </p>
 
     <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required />
 
@@ -81,47 +84,5 @@
       //console.log(cargo.value)
     }
   
-</script>
-
-<script type="text/javascript">
-  
-/* window.addEventListener("load", function(event) { 
-//let eee = document.getElementById('#email_id').value;
-  var correo = document.querySelector('#email_id').value;
-  var gre = document.querySelector('#greeting_text').value = correo;  
-  var cargo = document.querySelector('#job_title');
-  var tel = document.querySelector('#phone_number');
-  var unidad = document.querySelector('#preferred_pronoun');
-  
-  
-
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-
-var raw = JSON.stringify({
-  "correo": "manuelperez@pucmm.edu.do"
-});
-
-
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
-
-  fetch("https://prod-29.westus.logic.azure.com:443/workflows/b99ce35126ee4b278be693e44ee31bf2/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BNBlKqFf8vaViNf7nlHudzobTdzxa4n0DcgXr8oXe_c", requestOptions)
-  .then(response => response.json())
-  .then(result => {dataUser(result)})
-  .catch(error => console.log('error', error));
-
-  function dataUser(datos){
-    cargo.value = datos.jobTitle;
-    tel.value = '809-535-0111 Ext.:' + datos.businessPhones[0];
-    unidad.value = datos.department;
-  
-}
-
-});*/
 </script>
 </html>
