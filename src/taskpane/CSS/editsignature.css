@@ -1,6 +1,12 @@
 .container {
   margin: auto;
-  /*text-align: center;*/
+  text-align: center;
+}
+
+.container p{
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
 }
 
 #message {
