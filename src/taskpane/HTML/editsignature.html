@@ -21,17 +21,17 @@
       2. Haga clic en el botón guardar para salvar la información.
     </p>
 
-    <input type="text" id="display_name" placeholder="Name*" onclick="this.select()" required />
+    <input type="text" id="display_name" placeholder="Name*" readonly="readonly" onclick="this.select()" required />
 
-    <input type="email" id="email_id" placeholder="Email address*" onclick="this.select()" required />
+    <input type="email" id="email_id" placeholder="Email address*" readonly="readonly" onclick="this.select()" required />
 
-    <input type="text" id="job_title" placeholder="Puesto" />
+    <input type="text" id="job_title" placeholder="Puesto" readonly="readonly" />
 
-    <input type="text" id="phone_number" placeholder="Phone number" />
+    <input type="text" id="phone_number" placeholder="Phone number" readonly="readonly" />
 
-    <input type="text" placeholder="Eg: Thank you," id="greeting_text" style="display:none;"/>
+    <input type="text" placeholder="Eg: Thank you," id="greeting_text" readonly="readonly" style="display:none;"/>
 
-    <input type="text" placeholder="Dependencia" id="preferred_pronoun" />
+    <input type="text" placeholder="Dependencia" id="preferred_pronoun" readonly="readonly" />
 
     <button id="cargar_datos" onclick="cargar_datos()">Cargar Datos</button>
     <button id="next_button_t1" class="registerbtn" onclick="create_user_info()">Guardar</button>
