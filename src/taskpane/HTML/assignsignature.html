@@ -19,18 +19,18 @@
 
 <body>  
   <div class="container-taskp">
-    <p>Comfirma que los datos estan correctos, en caso de tener una corrección pendiente comunicarse con RRHH</p>
+    <p class="templates">3. Confirma que los datos están correctos, en caso contrario, comunicarse con la Dirección de Recursos Humanos.</p>
 
     <p class="templates" style="display:none;">TEMPLATE A</p>
     <div id="box_1" style="display:none;"></div>
     <button class="testBtn" onclick="test_template_A()" style="display:none;">Test</button>
 
-    <p class="templates">TEMPLATE B</p>
-    <div id="box_2"></div>
+    <p class="templates" style="display:none;">TEMPLATE B</p>
+    <div id="box_2" style="display:none;"></div>
     <button class="testBtn" onclick="test_template_B()" style="display:none;">Test</button>
 
-    <p class="templates">TEMPLATE C</p>
-    <div id="box_3"></div>
+    <p class="templates" style="display:none;">TEMPLATE C</p>
+    <div id="box_3" style="display:none;"></div>
     <button class="testBtn" onclick="test_template_C()" style="display:none;">Test</button>
 
     <div style="height:35px;"><br/></div>
@@ -46,7 +46,7 @@
       </label>
     </div>
 
-    <div style="height:20px;"><br></div>
+    <div style="height:20px;" style="display:none;"><br></div>
 
     <div style="display: none;" class="dropdown">
       <label for="templates">Reply
@@ -59,7 +59,7 @@
         </label>
     </div>
 
-    <div style="height:20px;"><br></div>
+    <div style="height:20px;" style="display:none;"><br></div>
 
     <div style="display: none;" class="dropdown">
       <label for="templates">Forward
@@ -72,12 +72,12 @@
       </label>
     </div>
 
-    <div style="height:15px;"><br></div>
+    <div style="height:15px;" ><br></div>
 
     <p style="display: none;" id="newMApt"><strong>Appointments</strong> will use <strong>New Mail</strong> template.</p>
     <p id="override_sig">Sobrescribir la firma de Outlook</p>
     <label style = "position:relative; left:230px; top:2.5px;" class="switch">
-      <input id="checkbox_sig" type="checkbox" checked>
+      <input id="checkbox_sig" type="checkbox">
       <span class="slider round"></span>
     </label>
 
@@ -87,7 +87,7 @@
 
     <button id="submit_button" type="submit" class="registerbtn" onclick="save_signature_settings()">Guardar</button>
 
-    <p id="message">¡Guardado!Puede cerrar este panel.</p>
+    <p id="message">¡Guardado! Puede cerrar este panel.</p>
 
 
   </div>
