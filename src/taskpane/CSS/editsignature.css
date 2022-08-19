@@ -27,7 +27,7 @@ h2 {
   color: #aaaaaa;
 }
 
-#next_button_t1,
+#cargar_datos, #next_button_t1,
 #reset_all_config_btn,
 #feedback_btn {
   width: 120px;
