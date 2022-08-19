@@ -57,7 +57,7 @@
 
   #submit_button{
     position: relative;
-    left: 144px;
+    left: 110px;
     width: 86px;
     height: 32px;
     color: white;
@@ -118,7 +118,8 @@
   
   .templates{
     position: relative;
-    left: 17px;
+    /*left: 17px;*/
+    padding: 17px;/*escrito por manuel*/
     margin-bottom: 0;
     font-size: 12px;
     text-align: left;
