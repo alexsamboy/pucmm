@@ -112,7 +112,7 @@ function addTemplateSignature(signatureDetails, eventObj, signatureImageBase64) 
 function display_insight_infobar() {
   Office.context.mailbox.item.notificationMessages.addAsync("fd90eb33431b46f58a68720c36154b4a", {
     type: "insightMessage",
-    message: "Por favor confimer su firma..",
+    message: "Por favor confimar su firma..",
     icon: "Icon.16x16",
     actions: [
       {
