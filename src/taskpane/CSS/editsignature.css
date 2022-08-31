@@ -58,6 +58,9 @@ h2 {
   cursor: pointer;
   opacity: 1;
 }
+#cargar_datos:hover{
+  background-color: #0078D4;
+}
 
 #reset_all_config_btn {
   background-color: red;
